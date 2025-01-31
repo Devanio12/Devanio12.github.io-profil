@@ -1,0 +1,98 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600);
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  font-size: 15px;
+}
+h1 {
+  text-align: center;
+  font-size: 30px;
+}
+P {
+  font-size: larger;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2c3e50;
+}
+.container {
+  position: relative;
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.container .card {
+  position: relative;
+  max-width: 300px;
+  height: 400px;
+  background-color: #fff;
+  margin: 40px 20px;
+  padding: 30px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  object-fit: none;
+  box-shadow: 0 5px 0.5px rgba(0, 0, 0, 0.5); /* Corrected alpha value */
+  transition: 4s ease-in-out; /* Fixed transition timing */
+}
+.container .card:hover {
+  max-width: 300px;
+  max-height: 400px;
+}
+.container .card .imgBx {
+  position: relative;
+  width: 280px;
+  height: 600px;
+  border-image: auto;
+  top: -30px;
+  left: 0px;
+  z-index: 1;
+  box-shadow: 0 5px 0.5px rgba(0, 0, 0, 0.5); /* Corrected alpha value */
+}
+.container .card .imgBx {
+  background-color: #241e1e;
+  max-width: 250px;
+  max-height: 400px;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: none;
+  background-position: top center;
+}
+
+.img1 {
+  background: url("https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/c6c50b680c5e1846a9c77f86d5aa357d46584ffe-1920x1080.png?auto=format&fit=fill&q=80&w=1082");
+}
+
+.img2 {
+  background: url("vito.jpg");
+}
+
+.img3 {
+  background: url("https://sm.ign.com/ign_ap/cover/v/valorant/valorant_he99.jpg");
+}
+
+.container .card .content {
+  position: relative;
+  max-width: 100%;
+  margin-top: -1200px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s ease-in-out; /* Fixed transition timing */
+}
+.container .card:hover .content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.4s; /* Fixed transition timing */
+}
